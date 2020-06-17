@@ -6,11 +6,11 @@ This data set consists of the results of analysis done by our tool.
 The tool automatically collect vulnerability information from NVD and do following analysis.
 
 * Identifiyng repository
-  The tool identifies source code repository of the product mentioned in description of the vulnerability.
+    * The tool identifies source code repository of the product mentioned in description of the vulnerability.
 * Identifying versions
-  The tool identify release tags correspond to fix version and latest affected version of the vulnerability.
+    * The tool identify release tags correspond to fix version and latest affected version of the vulnerability.
 * Identifying fix revision
-  The tool finds fix revisions of the vulnerability.
+    * The tool finds fix revisions of the vulnerability.
 
 We manually classified them by the result of each analysis.
 
@@ -20,27 +20,27 @@ The results of analysis are represented in one file per vulnerability.
 They are located in the directories listed below.
 
 * oss
-  contains data for vulnerabilities of OSS
+  * contains data for vulnerabilities of OSS
 * oss/not_found
-  contains data for vulnerabilities whose repositories were not found by the tool
+  * contains data for vulnerabilities whose repositories were not found by the tool
 * oss/correct_repository
-  contains data for vulnerabilities whose correct repositories were identifined by the tool
+  * contains data for vulnerabilities whose correct repositories were identifined by the tool
 * oss/correct_repository/correct_version
-  contains data for vulnerabilities whose correct affected and fix versions were identified by the tool
+  * contains data for vulnerabilities whose correct affected and fix versions were identified by the tool
 * oss/correct_repository/correct_version/success
-  contains data for vulnerabilities whose fix revisions were found by the tool
+  * contains data for vulnerabilities whose fix revisions were found by the tool
 * oss/correct_repository/correct_version/failure
-  contains data for vulnerabilities whose fix revisions were not found by the tool
+  * contains data for vulnerabilities whose fix revisions were not found by the tool
 * oss/correct_repository/wrong_version
-  contains data for vulnerabilities whose correct affected and fix versions were not found by the tool
+  * contains data for vulnerabilities whose correct affected and fix versions were not found by the tool
 * oss/wrong_repository
-  contains data for vulnerabilities whose repositories were wrongly identifined by the tool
+  * contains data for vulnerabilities whose repositories were wrongly identifined by the tool
 * proprietary
-  contains data for vulnerabilities of proprietary software
+  * contains data for vulnerabilities of proprietary software
 * proprietary/not_found
-  contains data for vulnerabilities whose repositories were not found by the tool
+  * contains data for vulnerabilities whose repositories were not found by the tool
 * proprietary/wrong_repository
-  contains data for vulnerabilities whose repositories were wrongly identifined by the tool
+  * contains data for vulnerabilities whose repositories were wrongly identifined by the tool
 
 ## Schema
 
